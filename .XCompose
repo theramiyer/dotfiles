@@ -1,0 +1,6 @@
+include "%L"
+
+<Multi_key> <l> <l>                 : "ℓ"          U2113     # litre symbol
+<Multi_key> <comma> <period>        : "◊"          U25CA     # lozenge
+<Multi_key> <n> <space>             : "⁠"           U2060     # word-joiner
+<Multi_key> <z> <space>             : "⁠"           U2060     # word-joiner
