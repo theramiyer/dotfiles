@@ -17,13 +17,19 @@
     "git.confirmSync": false,
     "git.autofetch": true,
     "editor.formatOnPaste": true,
-    "editor.fontFamily": "'Fira Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "window.zoomLevel": 0,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
+    "editor.fontFamily": "'Fira Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "window.zoomLevel": 0,
+    // Markdown settings
     "markdown.extension.italic.indicator": "_",
+    // cSpell settings
     "cSpell.language": "en-GB",
     "cSpell.userWords": [
         "WhatsApp",
-    ]
+    ],
+    // Status bar settings
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#1A1A1A"
+    }
 }
