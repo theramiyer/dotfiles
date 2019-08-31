@@ -1,0 +1,25 @@
+{
+    // Enables pop-up that shows parameter documentation and type information as you type
+    "editor.parameterHints": false,
+    "window.menuBarVisibility": "hidden",
+    // Enable word wrapping
+    "editor.wordWrap": "bounded",
+    "[markdown]": {
+        "editor.wordWrap": "bounded",
+        "editor.quickSuggestions": false
+    },
+    // Controls if the editor shows CodeLens
+    "editor.codeLens": false,
+    // Controls if the minimap is shown
+    "editor.minimap.enabled": false,
+    "git.enableSmartCommit": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "editor.formatOnPaste": true,
+    "window.zoomLevel": 0,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "cSpell.language": "en-GB",
+    "markdown.extension.italic.indicator": "_"
+}
