@@ -4,10 +4,6 @@
     "window.menuBarVisibility": "hidden",
     // Enable word wrapping
     "editor.wordWrap": "bounded",
-    "[markdown]": {
-        "editor.wordWrap": "bounded",
-        "editor.quickSuggestions": false
-    },
     // Controls if the editor shows CodeLens
     "editor.codeLens": false,
     // Controls if the minimap is shown
@@ -22,6 +18,11 @@
     "editor.fontFamily": "'Fira Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "window.zoomLevel": 0,
     // Markdown settings
+    "[markdown]": {
+        "editor.wordWrap": "bounded",
+        "editor.quickSuggestions": false,
+        "files.trimTrailingWhitespace": false
+    },
     "markdown.extension.italic.indicator": "_",
     // cSpell settings
     "cSpell.language": "en-GB",
