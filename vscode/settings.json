@@ -17,10 +17,13 @@
     "git.confirmSync": false,
     "git.autofetch": true,
     "editor.formatOnPaste": true,
+    "editor.fontFamily": "'Fira Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "window.zoomLevel": 0,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
-    "cSpell.language": "en-GB",
     "markdown.extension.italic.indicator": "_",
-    "editor.fontFamily": "'Fira Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'"
+    "cSpell.language": "en-GB",
+    "cSpell.userWords": [
+        "WhatsApp",
+    ]
 }
