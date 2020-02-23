@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sdX", ATTR{queue/rotational}=="1", RUN+="/usr/sbin/hdparm -S 1 /dev/sdc"
