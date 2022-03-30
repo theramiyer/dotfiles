@@ -4,3 +4,4 @@ include "%L"
 <Multi_key> <comma> <period>        : "◊"          U25CA     # lozenge
 <Multi_key> <n> <space>             : "⁠"           U2060     # word-joiner
 <Multi_key> <z> <space>             : "⁠"           U2060     # word-joiner
+<Multi_key> <4>                     : "₹"          U20B9     # Indian Rupee
