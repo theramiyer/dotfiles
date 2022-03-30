@@ -57,7 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -91,6 +91,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias postdate='date +"%F %T" | xclip -selection clipboard -r'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -120,4 +121,18 @@ fi
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-export PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]\n$ "
+# export PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]me@ansible\[\033[00m\]:\[\033[01;34m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+export PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+# Install Ruby Gems to ~/gems
+export GEM_HOME=$HOME/.gems
+export PATH=$HOME/.gems/bin:$PATH
+PATH="$HOME/.local/bin:$PATH"
+
+# Upload blog images to AWS
+alias upload-blog-images='cd ~/Documents/Multimedia/Images/Raster/blog-images; aws s3 sync . s3://blogfiles.ramiyer.me/ --delete --cache-control "max-age=31556952";cd'
+alias upload-millennierd-content='cd ~/Documents/Multimedia/Images/Raster/millennierd-content; aws s3 sync . s3://content.millennierd.in/ --delete --cache-control "max-age=31556952";cd'
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
