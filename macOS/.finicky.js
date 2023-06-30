@@ -43,6 +43,13 @@ module.exports = {
           /^https?:\/\/.*\.?icloud\.com\/?.*$/
         ],
         browser: "Safari"
+      },
+      {
+        match: /^https?:\/\/.*\.?netflix\.com\/?.*$/,
+        browser: {
+          name: "Brave Browser",
+          profile: "Profile 1"
+        }
       }
     ]
 }
