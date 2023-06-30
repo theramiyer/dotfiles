@@ -48,7 +48,7 @@ module.exports = {
         match: /^https?:\/\/.*\.?netflix\.com\/?.*$/,
         browser: {
           name: "Brave Browser",
-          profile: "Profile 1"
+          profile: "Netflix"
         }
       }
     ]
