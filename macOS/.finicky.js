@@ -50,6 +50,13 @@ module.exports = {
           name: "Brave Browser",
           profile: "Netflix"
         }
+      },
+      {
+        match: /^https?:\/\/.*\.?medium\.com\/?.*$/,
+        browser: {
+          name: "Brave Browser",
+          profile: "Medium"
+        }
       }
     ]
 }
