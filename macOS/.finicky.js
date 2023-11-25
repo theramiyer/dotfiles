@@ -3,13 +3,16 @@ module.exports = {
     handlers: [
       {
         match: [
-          /^https:\/\/.*\.?google\.(com|in)\/?.*$/
+          /^https:\/\/.*\.?google\.(com|in)\/?.*$/,
+          /^https:\/\/.*\.?youtube\.com\/?.*$/,
+          /^https:\/\/youtu\.be\/?.*$/
         ],
         browser: "Google Chrome"
       },
       {
         match: [
           /^https?:\/\/.*\.?amazon\.(com|in|co\.uk|ca|es|fr|de|it|co\.jp)\/?.*$/,
+          /^https?:\/\/.*\.?amzn\.(eu|to)\/?.*$/,
           /^https?:\/\/.*\.?primevideo\.com\/?.*$/
         ],
         browser: "Vivaldi"
