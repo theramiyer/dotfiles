@@ -1,5 +1,5 @@
 module.exports = {
-    defaultBrowser: "Firefox",      
+    defaultBrowser: "Mullvad Browser",      
     handlers: [
       {
         match: [
