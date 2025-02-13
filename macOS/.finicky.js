@@ -60,6 +60,13 @@ module.exports = {
           name: "Brave Browser",
           profile: "Medium"
         }
+      },
+      {
+        match: /^https?:\/\/.*\.?github\.com\/?.*$/,
+        browser: {
+          name: "Firefox",
+          profile: "Medium"
+        }
       }
     ]
 }
