@@ -1,4 +1,5 @@
 tap "homebrew/bundle"
+brew "awscli"
 brew "ca-certificates"
 brew "cask"
 brew "ffmpeg"
