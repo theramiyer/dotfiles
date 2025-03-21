@@ -9,7 +9,7 @@ brew "hugo"
 brew "node"
 brew "nvm"
 brew "openssl@3"
-brew "python@3.13"
+brew "python@3.13" # Run brew link python after this
 brew "opentofu"
 brew "vite"
 cask "audacity"
