@@ -1,4 +1,8 @@
-PS1="%B%F{cyan}%n@macbook%f%b %1~ %# "
+if [[ "$(sysctl -n hw.model)" == "Macmini"* ]]; then
+  PS1="%B%F{cyan}%n@macmini%f%b %1~ %# "
+else
+  PS1="%B%F{cyan}%n@macbook%f%b %1~ %# "
+fi
 HOMEBREW_AUTO_UPDATE_SECS=86400
 
 eval "$(direnv hook zsh)"
