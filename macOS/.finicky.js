@@ -62,10 +62,9 @@ module.exports = {
         }
       },
       {
-        match: /^https?:\/\/.*\.?github\.com\/?.*$/,
+        match: /^https?:\/\/.*\.?git(hu|la)b\.com\/?.*$/,
         browser: {
-          name: "Firefox",
-          profile: "Medium"
+          name: "Firefox"
         }
       }
     ]
