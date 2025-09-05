@@ -62,7 +62,11 @@ export default {
         }
       },
       {
-        match: /^https?:\/\/.*\.?git(hu|la)b\.com\/?.*$/,
+        match: [
+          /^https?:\/\/.*\.?git(hu|la)b\.com\/?.*$/,
+          /^https?:\/\/.*\.?languagetools\.org\/?.*$/,
+          /^https?:\/\/.*\.?cloudflare\.com\/?.*$/,
+        ],
         browser: {
           name: "Firefox"
         }
