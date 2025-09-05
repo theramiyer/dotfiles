@@ -13,3 +13,5 @@ fpath=(/Users/ram/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+
+export NVM_DIR="$HOME/.nvm"
