@@ -13,7 +13,10 @@ export default {
         match: [
           /^https?:\/\/.*\.?amazon\.(com|in|co\.uk|ca|es|fr|de|it|co\.jp)\/?.*$/,
           /^https?:\/\/.*\.?amzn\.(eu|to)\/?.*$/,
-          /^https?:\/\/.*\.?primevideo\.com\/?.*$/
+          /^https?:\/\/.*\.?primevideo\.com\/?.*$/,
+          /^https?:\/\/.*\.?amazonaws\.com\/?.*$/,
+          /^https?:\/\/.*\.?console\.aws\/?.*$/,
+          /^https?:\/\/.*\.?awsapps\.com\/?.*$/
         ],
         browser: "Vivaldi"
       },
